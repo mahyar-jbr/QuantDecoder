@@ -15,7 +15,11 @@ git clone https://github.com/mahyar-jbr/QuantDecoder.git
 cd QuantDecoder
 uv sync
 uv run pytest
+uv run python scripts/check_env.py
 ```
+
+The last command prints the tool versions and which compute devices work: `cpu` always, `mps` on
+Apple silicon, `cuda` on an NVIDIA GPU.
 
 ## Data
 
