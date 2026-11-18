@@ -1,0 +1,25 @@
+# Python, virtual environment and tool caches
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Downloaded data and model checkpoints never go into git
+/data/
+/checkpoints/
+
+# Secrets
+.env
+.env.*
+
+# Editors and macOS
+.vscode/
+.idea/
+.DS_Store
