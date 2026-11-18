@@ -23,9 +23,19 @@ Apple silicon, `cuda` on an NVIDIA GPU.
 
 ## Data
 
-The experiments use Google Quantum AI's public surface code data, Zenodo record
-[6804040](https://zenodo.org/records/6804040), licensed CC BY 4.0. The data is never committed to
-this repository.
+The experiments use Google Quantum AI's public surface code data:
+
+> Google Quantum AI Team. Data for "Suppressing quantum errors by scaling a surface code logical
+> qubit". Zenodo, 2022. https://doi.org/10.5281/zenodo.6804040. License: CC BY 4.0.
+
+Download it with:
+
+```sh
+uv run python scripts/download_data.py
+```
+
+This fetches the 315 MB zip into `data/`, checks its size and md5 checksum, and unpacks it. A
+second run does nothing. The data is never committed to this repository.
 
 ## License
 
